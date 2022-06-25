@@ -1,0 +1,34 @@
+@mixin d-flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin truncate {
+  max-width: 250px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin message-box($background-color, $align) {
+  background-color: $background-color;
+  width: fit-content;
+  max-width: 60%;
+  padding: 4px 12px;
+  margin-top: 16px;
+  border-radius: 12px;
+  @if ($align == "right") {
+    margin-left: auto;
+  }
+
+  .message-info {
+    text-align: end;
+    margin-top: 5px;
+
+    .fa-solid {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "figma-telegram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "scss": "sass -w scss:public/css -s compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
